@@ -1,4 +1,3 @@
-```react
 import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Star, Instagram, Scissors, Calendar, User, ChevronRight, Sparkles, Quote } from 'lucide-react';
 
@@ -342,5 +341,3 @@ export default function App() {
   );
 }
 
-
-```
