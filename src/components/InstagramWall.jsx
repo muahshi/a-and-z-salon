@@ -2,12 +2,12 @@ import React from 'react';
 import { Instagram } from 'lucide-react';
 
 export default function InstagramWall() {
-  // यहाँ अपने असली Instagram Posts के लिंक डालें (ध्यान दें कि लिंक के आखिर में /p/ID/ हो)
+  // मैंने आपके लिंक्स से ?igsh= वाला एक्स्ट्रा हिस्सा हटा दिया है ताकि Instagram इसे ब्लॉक न करे
   const instagramPosts = [
-    "https://www.instagram.com/reel/DXgm9_mk6E3/?igsh=Z3FnZnNjejlvbnlh", // अपना पहला पोस्ट लिंक डालें
-    "https://www.instagram.com/reel/DB5hvYcN60m/?igsh=MWw2Y3lsZTZjaWRjMA==", // अपना दूसरा पोस्ट लिंक डालें
-    "https://www.instagram.com/reel/DXKLPLZjTuw/?igsh=MXVhc2d4NTZhMGg0Yw==", // अपना तीसरा पोस्ट लिंक डालें
-    "https://www.instagram.com/reel/DSwtxT2DVyS/?igsh=bnhkczE3aW41NmFr"  // अपना चौथा पोस्ट लिंक डालें
+    "https://www.instagram.com/reel/DXgm9_mk6E3",
+    "https://www.instagram.com/reel/DB5hvYcN60m",
+    "https://www.instagram.com/reel/DXKLPLZjTuw",
+    "https://www.instagram.com/reel/DSwtxT2DVyS"
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function InstagramWall() {
         {/* Live Instagram Feed (Iframes) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {instagramPosts.map((postUrl, i) => (
-            <div key={i} className="w-full bg-white rounded-xl overflow-hidden shadow-[0_0_15px_rgba(217,70,239,0.1)] h-[400px] border border-white/10 transition-transform duration-500 hover:scale-[1.02]">
+            <div key={i} className="w-full bg-white rounded-xl overflow-hidden shadow-[0_0_15px_rgba(217,70,239,0.1)] h-[450px] border border-white/10 transition-transform duration-500 hover:scale-[1.02]">
               {/* /embed लगाकर Instagram को सीधे वेबसाइट में लोड किया जा रहा है */}
               <iframe
                 src={`${postUrl}/embed`}
@@ -49,7 +49,7 @@ export default function InstagramWall() {
                 scrolling="no"
                 allowTransparency="true"
                 className="w-full h-full"
-                title={`Instagram Post ${i + 1}`}
+                title={`Instagram Reel ${i + 1}`}
               ></iframe>
             </div>
           ))}
