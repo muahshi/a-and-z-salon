@@ -34,7 +34,7 @@ export default function Hero() {
       <section className="relative min-h-screen flex items-center bg-black">
         {/* YAHAN APNI HERO IMAGE DAALEIN */}
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-bg.jpg" alt="Luxury Salon" className="w-full h-full object-cover object-right opacity-80" />
+          <img src="/images/hero-bg.png" alt="Luxury Salon" className="w-full h-full object-cover object-right opacity-80" />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
         </div>
 
