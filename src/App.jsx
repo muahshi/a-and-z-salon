@@ -18,7 +18,7 @@ export default function App() {
   const handleBooking = (e) => {
     e.preventDefault();
     const text = `VIP Appointment Request:\n\n*Naam:* ${formData.name}\n*Service:* ${formData.service}\n*Tarik (Date):* ${formData.date}\n*Samay (Time):* ${formData.time}\n\nKripya meri booking confirm karein.`;
-   window.open(`https://wa.me/917415989069?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/917415989069?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   // SEO Schema Markup (Google Search ke liye)
@@ -340,4 +340,3 @@ export default function App() {
     </div>
   );
 }
-
