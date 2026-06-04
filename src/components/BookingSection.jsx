@@ -68,7 +68,7 @@ export default function BookingSection() {
           {/* Right Side - Big Bridal Image */}
           <div className="hidden lg:block relative h-full min-h-[500px]">
             {/* YAHAN APNI BOOKING IMAGE DAALEIN */}
-            <img src="/images/booking-bg.jpg" alt="Bridal Makeup" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="/images/booking-bg.png" alt="Bridal Makeup" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent w-1/3"></div>
           </div>
 
